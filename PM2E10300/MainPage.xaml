@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM2E10300.MainPage">
+
+
+    
+
+    <StackLayout  Padding="10,12">
+        <StackLayout Orientation="Horizontal">
+        <Image Source="uth.jpg" WidthRequest="80" HeightRequest="80"/>
+         <Label  Text="SITE VISITOR APP" Padding="30" FontSize="20" TextColor="Black" FontAttributes="Bold"/>
+        </StackLayout>
+          <Image x:Name="fotoImage" Aspect="AspectFit" WidthRequest="300" HeightRequest="300"/>
+
+
+        <Label Text="Latitud: " x:Name="latitudLabel" FontSize="18" TextColor="Green" FontAttributes="Bold" Padding="10"/>
+        <Label Text="Longitud: " x:Name="longitudLabel"  FontSize="18" TextColor="Green" FontAttributes="Bold" Padding="10" />
+        <Entry Placeholder="Descripción" x:Name="descripcionEntry" FontSize="20" TextColor="Black" FontAttributes="Italic" />
+        <Button Text="Tomar Foto" Clicked="TomarFoto_Clicked"/>
+        <Button Text="Lista Sitios" Clicked="ListaSitio_Clicked"/>
+        <Button Text="Agregar Sitio" Clicked="GuardarSitio_Clicked" />
+        <Button Text="Salir" Clicked="Salir_Clicked" />
+        
+        
+    </StackLayout>
+
+</ContentPage>
